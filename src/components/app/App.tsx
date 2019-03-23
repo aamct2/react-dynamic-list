@@ -3,11 +3,11 @@ import { List, ListItemDefault, ListItemSubtitle } from "../list"
 import { Button } from "../button"
 
 export class App extends Component {
-  items: Array<ListItemDefault | ListItemSubtitle | Component> = [
+  private items: Array<ListItemDefault | ListItemSubtitle | JSX.Element> = [
     new ListItemDefault("Foo"),
     new ListItemSubtitle("Bar", "Baz"),
     new ListItemDefault("Qux"),
-    new Button({}),
+    <Button />,
     new ListItemDefault("Quux"),
   ]
 
